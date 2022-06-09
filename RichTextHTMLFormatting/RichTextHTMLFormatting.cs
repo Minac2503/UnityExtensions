@@ -28,8 +28,6 @@ namespace NS
 			//Color
 			value = value.Replace("</color>", "[/span]");
 			value = value.Replace("<color=", "[span style=\"color:");
-			//var regex = new Regex(Regex.Escape(">"));
-			//value = regex.Replace(value, ";\">", 1);
 			value = value.Replace(">", ";\"]");
 
 			//Revert [] back to <>
